@@ -10,8 +10,12 @@ variable "project_name" {
 
 variable "docker_image" {
   type    = string
-  # your image on Docker Hub
   default = "jalee12/cloudcart:latest"
+}
+
+variable "instance_type" {
+  type    = string
+  default = "t3.micro"
 }
 
 variable "desired_capacity" {
@@ -27,9 +31,4 @@ variable "min_size" {
 variable "max_size" {
   type    = number
   default = 4
-}
-
-variable "instance_type" {
-  type    = string
-  default = "t3.micro"
 }
