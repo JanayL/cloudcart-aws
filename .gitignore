@@ -141,3 +141,7 @@ vite.config.ts.timestamp-*
 *.tfstate
 *.tfstate.*
 .terraform/
+crash.log
+terraform.tfstate.backup.terraform/
+*.tfstate
+*.tfstate.*
